@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  min-width: 1250px;
+}
+
+#header {
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  height: 400px;
+  padding: 10px 120px;
+  min-width: 1126px;
+  margin: 0 calc(10% / 2);
+  background-color: #eeeeee;
+  border-bottom: 1px solid #bbbbbb;
+}
+#header div {
+  font-weight: 700;
+}
+#header img {
+  width: 150px;
+  height: 180px;
+  margin-right: 10px;
+}
+
+#header > :first-child {
+  display: flex;
+}
+
+#header #my-name {
+  font-size: 32px;
+  margin: 5px 10px;
+}
+
+#Self-introduction {
+  position: absolute;
+  top: 10px;
+  right: 130px;
+  width: 250px;
+  height: 300px;
+  background-color: chocolate;
+}
+
+#header .my-devide {
+  display: none;
+}
+
+@media all and (max-width: 1250px) {
+  #header {
+    margin: 0 61px;
+  }
+}
+
+table * {
+  padding: 2px 10px;
+}
+
+#header.on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  text-align: center;
+}
+
+#header.on * {
+  display: none;
+}
+#header.on > :first-child > :last-child,
+#header.on > :first-child {
+  display: inline-block;
+}
+#header.on #my-name,
+#header.on .my-devide,
+#header.on #my-phone {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0;
+}
+
+#contain {
+  width: 90%;
+  /* min-width: 1100px; */
+  margin: auto;
+  padding-top: 399px;
+}
+
+#contain * {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+  text-decoration: none;
+}
+
+#contain .technical-document-item-box {
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #bbbbbb;
+}
+
+.technical-document-item.title {
+  font-size: 40px;
+}
+
+.technical-document-item.title-info {
+  margin: 0;
+  font-size: 20px;
+  display: inline-block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.technical-document-item.img {
+  position: relative;
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 30px;
+  padding: 0;
+  flex-shrink: 0;
+}
+.technical-document-item.img.monitor {
+  background-image: url('./img/monitor.png');
+}
+.technical-document-item.img.phone {
+  background-image: url('./img/phone.png');
+}
+
+.technical-document-item.img.monitor img {
+  position: absolute;
+  top: 14.7%;
+  left: 7.8%;
+  width: 87%;
+  margin: 0;
+}
+
+.technical-document-item.img.phone img {
+  position: absolute;
+  top: 11.5%;
+  left: 29%;
+  width: 40%;
+  margin: 0;
+}
+
+.technical-document-item.img::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.technical-document-item.text-list {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.technical-document-item.text-list::before,
+.technical-document-item.text-list::after {
+  content: '';
+  margin: 0;
+  padding: 0;
+}
+
+.technical-document-item.text-list > * {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 10px 0;
+}
+
+.technical-document-item.text-list > * > * {
+  flex: 1;
+  padding: 10px 0;
+}
+
+#contain .technical-document-item.skillStack {
+  width: 100%;
+  display: block;
+}
+
+.technical-document-item.skillStack .technical-document-item.skillStack-inner {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+}
+
+.technical-document-item .technical-document-item.explanation {
+  padding-left: 20px;
+  flex: 1;
+}
