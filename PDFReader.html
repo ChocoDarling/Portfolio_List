@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./PDFReader.css" />
-    <title>자기소개서</title>
+    <title>temp</title>
   </head>
   <body>
     <a href="/Portfolio_List">
@@ -13,6 +13,7 @@
       <iframe src="" frameborder="0"></iframe>
     </div>
     <script>
+      document.title = location.search.replace('?', '');
       document.getElementsByTagName('iframe')[0].src = location.search.replace(
         '?',
         '',
