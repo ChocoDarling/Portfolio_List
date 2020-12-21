@@ -149,8 +149,6 @@ switch (document.title) {
     contain.append(tempElement);
     break;
 
-    break;
-
   default:
     break;
 }
