@@ -21,6 +21,7 @@ body {
   padding: 10px 120px;
   min-width: 1126px;
   margin: 0 calc(10% / 2);
+  font-size: 20px;
   background-color: #eeeeee;
   border-bottom: 1px solid #bbbbbb;
 }
@@ -42,9 +43,8 @@ body {
   margin: 5px 10px;
 }
 
-.pdf {
+.pdf > div {
   width: 200px;
-  height: 50px;
   margin: 0 20px;
   font-size: 20px;
   text-align: center;
@@ -70,24 +70,42 @@ table * {
 
 #header.on {
   position: fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   height: 50px;
+  padding: 0;
   text-align: center;
 }
 
 #header.on * {
   display: none;
 }
+
 #header.on > :first-child > :last-child,
-#header.on > :first-child {
+#header.on > div,
+#header.on a {
   display: inline-block;
 }
+
 #header.on #my-name,
 #header.on .my-devide,
-#header.on #my-phone {
+#header.on #my-phone,
+#header.on .pdf {
   display: inline-block;
   font-size: 24px;
+  margin: 0;
+  margin-right: 10px;
+  line-height: 0px;
+}
+
+#header.on .pdf > div {
+  display: inline-block;
+  line-height: 35px;
+  flex-grow: 0;
+  width: 150px;
   margin: 0;
 }
 
