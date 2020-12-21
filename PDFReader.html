@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./introduction.css" />
+    <link rel="stylesheet" href="./PDFReader.css" />
     <title>자기소개서</title>
   </head>
   <body>
@@ -10,8 +10,13 @@
       <div id="header">정경훈 / 010-3283-6388 / HOME</div>
     </a>
     <div id="contain">
-      <div class="title">자신의 장단점을 설명하시오</div>
-      <div class="info"></div>
+      <iframe src="" frameborder="0"></iframe>
     </div>
+    <script>
+      document.getElementsByTagName('iframe')[0].src = location.search.replace(
+        '?',
+        '',
+      );
+    </script>
   </body>
 </html>

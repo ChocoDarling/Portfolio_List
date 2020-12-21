@@ -6,7 +6,7 @@ const technicalDocumentArr = [
       'YOUTUBE IFRAME, NAVER API를 이용하여 REACT로 제작한 영화 예고편 서비스',
     img: './img/201204-main.png',
     mockUp: 'monitor',
-    url: 'http://ec2-3-34-130-217.ap-northeast-2.compute.amazonaws.com/',
+    url: 'http://ec2-3-36-71-148.ap-northeast-2.compute.amazonaws.com/',
     git: 'https://github.com/ChocoDarling/201204-SinglePortfolio.git',
     skillStack: [
       'nodejs',
@@ -22,7 +22,7 @@ const technicalDocumentArr = [
     titleInfo: 'MYSQL를 이용하여 NODEJS로 제작한 물품 판매 서비스',
     img: './img/201024-main.png',
     mockUp: 'monitor',
-    url: 'http://ec2-15-164-251-148.ap-northeast-2.compute.amazonaws.com/',
+    url: 'http://ec2-13-125-255-7.ap-northeast-2.compute.amazonaws.com/',
     git: 'https://github.com/ChocoDarling/20201023_single-portfolio.git',
     skillStack: ['nodejs', 'mysql', 'nodejs/express'],
   },
@@ -117,12 +117,12 @@ technicalDocumentArr.forEach((v) => {
 window.onscroll = () => {
   if (!location.search) {
     if (
-      window.scrollY > 350 &&
+      window.scrollY > 220 &&
       !document.getElementById('header').classList.contains('on')
     ) {
       document.getElementById('header').classList.add('on');
     } else if (
-      window.scrollY < 350 &&
+      window.scrollY < 220 &&
       document.getElementById('header').classList.contains('on')
     ) {
       document.getElementById('header').classList.remove('on');

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
+  text-decoration: none;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 90%;
-  height: 400px;
+  height: 270px;
   padding: 10px 120px;
   min-width: 1126px;
   margin: 0 calc(10% / 2);
@@ -32,7 +33,7 @@ body {
   margin-right: 10px;
 }
 
-#header > :first-child {
+#header > div {
   display: flex;
 }
 
@@ -41,13 +42,16 @@ body {
   margin: 5px 10px;
 }
 
-#Self-introduction {
-  position: absolute;
-  top: 10px;
-  right: 130px;
-  width: 250px;
-  height: 300px;
-  background-color: chocolate;
+.pdf {
+  width: 200px;
+  height: 50px;
+  margin: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: black;
+  line-height: 50px;
 }
 
 #header .my-devide {
@@ -91,7 +95,7 @@ table * {
   width: 90%;
   /* min-width: 1100px; */
   margin: auto;
-  padding-top: 399px;
+  padding-top: 269px;
 }
 
 #contain * {
