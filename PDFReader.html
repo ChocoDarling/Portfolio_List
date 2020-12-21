@@ -13,7 +13,7 @@
       <iframe src="" frameborder="0"></iframe>
     </div>
     <script>
-      document.title = location.search.replace('?', '');
+      document.title = decodeURI(location.search).replace('?', '');
       document.getElementsByTagName('iframe')[0].src = location.search.replace(
         '?',
         '',
